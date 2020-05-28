@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title >These Dogs!</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+	<link rel=stylesheet href="./css/one_page_website.css">
+	</head>
+<body>
+<!--NAV-->
+	<div class="menu-container">
+		<ul class="menu">
+			<a href="#top"><li>Home</li></a>
+			<a href="#gallery"><li>Gallery</li></a>
+			<a href="#videos"><li>Videos</li></a>
+		</ul>
+	</div>
+<!--END NAV-->
+<!--HOME-->
+<div id="home">
+	<div class="container">
+		<div class="text-center">
+			<id="top">
+			<span class="head-main">Affable Dogs</span></br></br>
+		</div>
+	</div>
+</div>
+<!--END HOME-->
+<div>
+	<a href="#labs">Click here to read more about Labrador Retrievers!</a></br>
+	<a href="#bmds">Click here to read more about Bernese Mountain Dogs!</a>
+</div>
+<h2 style="text-align:center" id=gallery>Lightbox Challenge Step 283</h2>
+<!--MODAL IMAGE GALLERY-->
+<div class="row">
+	<div class="column">
+		<img src="./images/thumb/thumbnail_01.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+	</div>
+	<div class="column">
+		<img src="./images/thumb/thumbnail_02.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+	</div>
+	<div class="column">
+		<img src="./images/thumb/thumbnail_03.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+	</div>
+	<div class="column">
+		<img src="./images/thumb/thumbnail_04.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+	</div>
+</div>
+<div class="row">
+	<div class="column">
+		<img src="./images/thumb/thumbnail_05.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+	</div>
+	<div class="column">
+		<img src="./images/thumb/thumbnail_06.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+	</div>
+	<div class="column">
+		<img src="./images/thumb/thumbnail_07.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+	</div>
+	<div class="column">
+		<img src="./images/thumb/thumbnail_08.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+	</div>
+</div>
+<div class="row">
+	<div class="column">
+		<img src="./images/thumb/thumbnail_09.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+	</div>
+	<div class="column">
+		<img src="./images/thumb/thumbnail_10.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+	</div>
+	<div class="column">
+		<img src="./images/thumb/thumbnail_11.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+	</div>
+	<div class="column">
+		<img src="./images/thumb/thumbnail_12.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+	</div>
+</div>
+<div id="myModal" class="modal">
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+	<div class="modal-content">
+		<div class="mySlides">
+			<div class="numbertext">1 / 12</div>
+			<img src="./images/thumb/thumbnail_01.jpg" style="width:100%">
+		</div>
+		<div class="mySlides">
+			<div class="numbertext">2 / 12</div>
+			<img src="./images/thumb/thumbnail_02.jpg" style="width:100%">
+		</div>
+		<div class="mySlides">
+			<div class="numbertext">3 / 12</div>
+			<img src="./images/thumb/thumbnail_03.jpg" style="width:100%">
+		</div>
+		<div class="mySlides">
+			<div class="numbertext">4 / 12</div>
+			<img src="./images/thumb/thumbnail_04.jpg" style="width:100%">
+		</div>
+		<div class="mySlides">
+			<div class="numbertext">5 / 12</div>
+			<img src="./images/thumb/thumbnail_05.jpg" style="width:100%">
+		</div>
+		<div class="mySlides">
+			<div class="numbertext">6 / 12</div>
+			<img src="./images/thumb/thumbnail_06.jpg" style="width:100%">
+		</div>
+		<div class="mySlides">
+			<div class="numbertext">7 / 12</div>
+			<img src="./images/thumb/thumbnail_07.jpg" style="width:100%">
+		</div>
+		<div class="mySlides">
+			<div class="numbertext">8 / 12</div>
+			<img src="./images/thumb/thumbnail_08.jpg" style="width:100%">
+		</div>
+		<div class="mySlides">
+			<div class="numbertext">9 / 12</div>
+			<img src="./images/thumb/thumbnail_09.jpg" style="width:100%">
+		</div>
+		<div class="mySlides">
+			<div class="numbertext">10 / 12</div>
+			<img src="./images/thumb/thumbnail_10.jpg" style="width:100%">
+		</div>
+		<div class="mySlides">
+			<div class="numbertext">11 / 12</div>
+			<img src="./images/thumb/thumbnail_11.jpg" style="width:100%">
+		</div>
+		<div class="mySlides">
+			<div class="numbertext">12 / 12</div>
+			<img src="./images/thumb/thumbnail_12.jpg" style="width:100%">
+		</div>
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+	<div class="row">
+		<div class="column">
+			<img class="demo cursor" src="./images/thumb/thumbnail_01.jpg" style="width:100%" onclick="currentSlide(1)" alt="Dog Group">
+		</div>
+		<div class="column">
+			<img class="demo cursor" src="./images/thumb/thumbnail_02.jpg" style="width:100%" onclick="currentSlide(2)" alt="Boxer">
+		</div>
+		<div class="column">
+			<img class="demo cursor" src="./images/thumb/thumbnail_03.jpg" style="width:100%" onclick="currentSlide(3)" alt="Rottweillers">
+		</div>
+		<div class="column">
+			<img class="demo cursor" src="./images/thumb/thumbnail_04.jpg" style="width:100%" onclick="currentSlide(4)" alt="Great face">
+		</div>
+	</div>
+	<div class="row">
+		<div class="column">
+			<img class="demo cursor" src="./images/thumb/thumbnail_05.jpg" style="width:100%" onclick="currentSlide(5)" alt="French Bulldog">
+		</div>
+		<div class="column">
+			<img class="demo cursor" src="./images/thumb/thumbnail_06.jpg" style="width:100%" onclick="currentSlide(6)" alt="Good natured">
+		</div>
+		<div class="column">
+			<img class="demo cursor" src="./images/thumb/thumbnail_07.jpg" style="width:100%" onclick="currentSlide(7)" alt="Great Dane & puppy">
+		</div>
+		<div class="column">
+			<img class="demo cursor" src="./images/thumb/thumbnail_08.jpg" style="width:100%" onclick="currentSlide(8)" alt="English Bulldog">
+		</div>
+	</div>
+	<div class="row">
+		<div class="column">
+			<img class="demo cursor" src="./images/thumb/thumbnail_09.jpg" style="width:100%" onclick="currentSlide(9)" alt="Chill">
+		</div>
+		<div class="column">
+			<img class="demo cursor" src="./images/thumb/thumbnail_10.jpg" style="width:100%" onclick="currentSlide(10)" alt="Another English Bulldog">
+		</div>
+		<div class="column">
+			<img class="demo cursor" src="./images/thumb/thumbnail_11.jpg" style="width:100%" onclick="currentSlide(11)" alt="Yet Another English Bulldog">
+		</div>
+		<div class="column">
+			<img class="demo cursor" src="./images/thumb/thumbnail_12.jpg" style="width:100%" onclick="currentSlide(12)" alt="Cute!">
+		</div>
+	</div>
+	</div>
+</div>
+    <!--END MODAL IMAGE GALLERY-->
+	<!--SECTION ON LABS-->
+	<section id="labs">
+			<h2>Labrador Retriever</h2>
+			<div class="boxImage">
+			<img src="https://www.publicdomainpictures.net/pictures/40000/velka/dog-13601642203yU.jpg">
+			</div>
+			<p>Public domain image courtesy of: <a href="http://www.facebook.com/hodanpictures?ref=hl" target="_blank">George Hodan</a>
+			<blockquote cite="https://www.rover.com/blog/breed-article-labrador-retriever">
+			[T]he <span style="color:#481f01;font-style:italic;font-weight:bold">Labrador retriever</span> is one of the most popular dogs in the United States (and in much of the world). ...<br>
+			The <em>Labrador retriever</em> was bred to be friendly, both toward humans and other dogs. To complement that gentle nature,<br>
+			their working history gives them a high-energy, fearless, enthusiastic personality. Labs are curious and intelligent,<br>
+			which means they do well as service dogs, but this can mean that your single-minded lab is more likely to escape or<br>
+			suddenly disappear, most likely having followed something interesting (squirrel?). This is why many owners of<br>
+			<em>Labrador retriever</em> dogs choose to microchip their pets.<details><summary>Source</summary><a href="https://www.rover.com/blog/breed-article-labrador-retriever" target="_blank">This quote comes from Rover.com. Follow this link to read more!</a></details></blockquote>
+	</section>
+	<!--END SECTION ON LABS-->
+	<!--SECTION ON Bernese Mountain Dogs-->
+	<section id="bmds">
+			<h2>Bernese Mountain Dogs</a></h2>
+			<div class="boxImage">
+				<p><img src="https://www.publicdomainpictures.net/pictures/60000/velka/moby-een-benner-senner-2.jpg">
+			</div>
+				<p>Public domain image courtesy of: <a href="https://www.publicdomainpictures.net/en/browse-author.php?a=34913" target="_blank">X posid</a>
+				<blockquote cite="https://www.rover.com/blog/5-facts-bernese-mountain-dog-lovers-know-heart">
+				There’s something quintessentially dog about the <span style="color:#85461e;font-style:italic;font-weight:bold">Bernese Mountain Dog</span>. They’re substantial creatures, weighing 70 to 110 pounds;<br>
+				they’re tough and sturdy but covered in gorgeous, soft fur; and their colors and markings give them an almost Platonic dog appearance.<br>
+				They’re an ideal combination of robust and cuddly. ... If you absolutely need a dog to babysit your small child, the <em>Bernese Mountain Dog</em><br>
+				should be top your choice. (This would not be the most irresponsible idea you’ve had, but also: don’t allow dogs to babysit your children.)<br>
+				Despite their large size and tough build, the <em>Bernese Mountain Dog</em> is extremely friendly, gentle, and loving.<details><summary>Source</summary><a href="https://www.rover.com/blog/5-facts-bernese-mountain-dog-lovers-know-heart" target="_blank">This quote comes from Rover.com. Follow this link to read more!</a></details></blockquote>
+				</p>
+	</section>
+	<!--END SECTION ON Bernese Mountain Dogs-->
+<!--VIDEOS-->
+	<section id="videos">
+		<h1>Videos</h1>
+		<div class="text-center">
+			<h2>Very Big Dogs</h2>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/U5KLMeFK_UY" set-cookie:video_shown=1; SameSite=none; secure frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<p><i>THE BIGGEST DOGS In The World</i> video courtesy of: <a href="https://www.youtube.com/channel/UCta3MuD7omvsJyb-SMQkKOQ" target="_blank">Trend Max</a><br>
+			</p>
+		</div>
+	</section>
+<!--END VIDEOS-->
+<script src="./js/one_page_website.js"></script>
+</body>
+<!--FOOTER-->
+	<div od="footer">
+	www.TheseDogs!&nbsp;|&nbsp;&#169; RZ&nbsp;2020
+	</div>
+</html>
